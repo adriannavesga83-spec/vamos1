@@ -27,7 +27,7 @@ body{
     position:relative;
 }
 
-/* Efectos de fondo */
+/* Fondo neon */
 body::before{
     content:'';
     position:absolute;
@@ -60,7 +60,7 @@ body::after{
     text-align:center;
     padding:35px 25px;
     border-radius:25px;
-    background:rgba(15,15,15,.90);
+    background:rgba(15,15,15,.92);
     border:1px solid rgba(255,0,0,.25);
     backdrop-filter:blur(15px);
 
@@ -76,26 +76,37 @@ body::after{
     width:170px;
     max-width:100%;
     margin-bottom:20px;
-    filter:drop-shadow(0 0 20px #ff0000);
+    filter:
+        drop-shadow(0 0 10px #ff0000)
+        drop-shadow(0 0 20px #ff0000)
+        drop-shadow(0 0 40px #ff0000);
 }
 
 h1{
-    color:white;
-    font-size:2.2rem;
+    color:#ffffff;
+    font-size:2.3rem;
     font-weight:800;
-    margin-bottom:15px;
+    margin-bottom:20px;
 
     text-shadow:
-    0 0 10px #ff0000,
-    0 0 20px #ff0000,
-    0 0 40px #ff0000;
+        0 0 10px #ff0000,
+        0 0 20px #ff0000,
+        0 0 40px #ff0000,
+        0 0 80px #ff0000;
 }
 
 p{
-    color:#e0e0e0;
-    font-size:1rem;
+    color:#ffffff;
+    font-size:1.2rem;
+    font-weight:700;
     line-height:1.8;
     margin-bottom:30px;
+    letter-spacing:.5px;
+
+    text-shadow:
+        0 0 8px #ffffff,
+        0 0 15px rgba(255,255,255,.8),
+        0 0 25px rgba(255,255,255,.4);
 }
 
 .telegram-btn{
@@ -111,19 +122,22 @@ p{
     text-decoration:none;
     color:white;
     font-size:1rem;
-    font-weight:700;
+    font-weight:800;
 
     background:linear-gradient(90deg,#ff0000,#990000);
 
     box-shadow:
     0 0 20px #ff0000,
-    0 0 40px rgba(255,0,0,.7);
+    0 0 40px rgba(255,0,0,.8);
 
     transition:.3s;
 }
 
 .telegram-btn:hover{
     transform:scale(1.03);
+    box-shadow:
+    0 0 30px #ff0000,
+    0 0 60px rgba(255,0,0,.9);
 }
 
 .telegram-btn svg{
@@ -142,7 +156,6 @@ p{
     }
 }
 
-/* Ajustes extra para celulares */
 @media(max-width:480px){
 
     .container{
@@ -154,11 +167,12 @@ p{
     }
 
     h1{
-        font-size:1.8rem;
+        font-size:1.9rem;
     }
 
     p{
-        font-size:.95rem;
+        font-size:1.05rem;
+        line-height:1.7;
     }
 
     .telegram-btn{
@@ -173,16 +187,35 @@ p{
 
 <div class="container">
 
-    <img src="https://i.ibb.co/B51dNgRG/ANTRAX.png" alt="ANTRAX" class="logo">
+    <img
+        src="https://i.ibb.co/B51dNgRG/ANTRAX.png"
+        alt="ANTRAX"
+        class="logo"
+    >
 
     <h1>ANTRAX OFICIAL</h1>
 
     <p>
-        Te pongo a ganar 2 palos diarios con tu NEQUI.<br><br>
-        Para ver toda la información, únete a mi grupo privado de Telegram presionando el botón de abajo 👇
+        🔥 TE ENSEÑO A GENERAR HASTA 2 PALOS DIARIOS CON TU NEQUI 🔥
+
+        <br><br>
+
+        ⚡ Accede ahora al grupo privado donde comparto toda la información paso a paso.
+
+        <br><br>
+
+        💸 Cientos de personas ya están aprovechando esta oportunidad.
+
+        <br><br>
+
+        👇 ENTRA AL TELEGRAM AHORA 👇
     </p>
 
-    <a href="https://t.me/+Ktn3l_8r-rdlMDEx" target="_blank" class="telegram-btn">
+    <a
+        href="https://t.me/+Ktn3l_8r-rdlMDEx"
+        target="_blank"
+        class="telegram-btn"
+    >
 
         <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M21.5 2.5L2.8 9.7c-1.3.5-1.3 1.3-.2 1.6l4.8 1.5 1.8 5.7c.2.6.1.8.8.8.5 0 .7-.2 1-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.2-15.1c.3-1.2-.4-1.8-1.5-1.3z"/>
